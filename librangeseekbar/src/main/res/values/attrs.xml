@@ -1,0 +1,11 @@
+<resources>
+    <declare-styleable name="RangeSeekBar">
+        <attr name="max" format="float"/>
+        <attr name="min" format="float"/>
+        <attr name="reserve" format="float"/>
+        <attr name="cells" format="integer"/>
+        <attr name="lineColorSelected" format="color"/>
+        <attr name="lineColorEdge" format="color"/>
+        <attr name="seekBarResId" format="reference"/>
+    </declare-styleable>
+</resources>
