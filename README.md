@@ -1,10 +1,10 @@
-# RangeSeekBar 
+## RangeSeekBar 
 
 ![image](https://github.com/iielse/RangeSeekBar/blob/master/app/seek_001.png)
 
 ![image](https://github.com/iielse/RangeSeekBar/blob/master/app/seekbar_001.gif)
 
-##通过布局文件设置属性
+#### 通过布局文件设置属性
 ```
 <org.ielse.widget.RangeSeekBar
 	android:id="@+id/rsb_3"
@@ -19,16 +19,16 @@
 	android:layout_height="36dip"/>
 ```
 
-##通过代码设置属性
+#### 通过代码设置属性
 
 `RangeSeekBar rsb1 = (RangeSeekBar) findViewById(R.id.rsb_1);`
 
 `rsb1.setRules(0, 100, 20, 1);` // 设置规则，逻辑同上
 
-##设置初始默认值
+#### 设置初始默认值
 `rsb1.setValue(15, 66);`  // 注意不符合规则rules的参数将抛出异常，RangeSeekBar不背这种锅
 
-##获取响应值
+#### 获取响应值
 * a)主动
 
 `float[] results = rsb1.getCurrentRange();`
@@ -44,11 +44,14 @@ rsb1.setOnRangeChangedListener(new RangeSeekBar.OnRangeChangedListener() {
 });
 ```
 
-##更加详细的源码分析和实现思路讲解
+#### 更加详细的源码分析和实现思路讲解
 [请戳这里](http://blog.csdn.net/bfbx5173/article/details/51869776) 
 
-##其它 
+#### 其它 
 希望你喜欢我的作品。`Star`是对我的最大支持. 谢谢
+
+此项目为很多年前，自学android时写的，思路可鉴。实际项目推荐使用
+https://github.com/Jay-Goo/RangeSeekBar
 
 
 
